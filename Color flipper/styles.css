@@ -1,0 +1,50 @@
+.nav-center {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid blue;
+
+}
+
+.nav-center h4 {
+    font-size: 25px;
+    padding: 15px;
+    width: 300px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 15px;
+    width: 300px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.container h2 {
+    background-color: black;
+    border-radius: 6px;
+    color: white;
+    height: 50px;
+    padding: 7px;
+}
+
+.simple-anchor {
+    color: blue;
+}
+
+.hex-code-anchor {
+    color: rgb(55, 201, 55);
+}

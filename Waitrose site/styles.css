@@ -1,0 +1,195 @@
+body {
+  background-color: #F3F3F3;
+}
+#navbar {
+  height: 70px;
+  width: 1184px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+  align-items: center;
+}
+
+#navbar button {
+  height: 42px;
+  background-color: white;
+  border-radius: 3.5px;
+  border-color: #dddddd;
+  border-style: solid;
+  border-width: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-text {
+  display: inline-flex;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+#navbar svg {
+  width: 10px;
+}
+
+.dropdown {
+  display: inline-flex;
+  height: 27px;
+  width: 30px;
+  border-left: 1px solid #ddd;
+  margin-left: 9px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping { 
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr)); 
+  grid-auto-rows: 551px;
+  grid-auto-flow: dense;
+  max-width: 1184px;
+  margin: auto;
+}
+
+.shopping-item {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dddddd;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  padding: 40px 14px 16px 15px;
+}
+
+.shopping-item-wide {
+  grid-column: span 2 / auto;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dddddd;
+}
+
+.heart {
+  position: absolute;
+  color: #b1b1b1;
+  cursor: pointer;
+  right: 10px;
+  top: 8px;
+}
+
+.food {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  cursor: pointer;
+  
+}
+
+.food-desc {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Waitrose","Gill Sans","Gill Sans MT",Tahoma,sans-serif;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+.grams {
+  
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Waitrose","Gill Sans","Gill Sans MT",Tahoma,sans-serif;
+  cursor: pointer;
+  color: #333333;
+  font-weight: normal;
+}
+
+.ratings {
+  padding-top: 25px;
+  text-align: left;
+  color: #333333;
+}
+
+.ratings svg:last-child {
+  margin-right: 0;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.link-deal {
+  margin: 0;
+  color: #a6192e;
+  background-color: transparent;
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.link-deal a {
+  color: #a6192e;
+  font-family: "Waitrose","Gill Sans","Gill Sans MT",Tahoma,sans-serif;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 15px;
+  font-family: "Waitrose","Gill Sans","Gill Sans MT",Tahoma,sans-serif;
+  color: #333333;
+}
+
+.price span:first-child {
+  font-size: 20px;
+  color: #333333;
+  
+}
+
+.add-button {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-width: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#asahi-img { 
+  width: 100%;
+}
+
+.asahi-offer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0px 10px 50px 10px;
+  
+}
+
+
+.shop-offers {
+  background-color: #53565A;
+  width: 200px;
+  height: 40px;
+  color: white;
+  border-style: none;
+  font-weight: bolder;
+}
+
+.add-button:hover {
+  border-width: 2px;
+}
+
+
+
+
+
