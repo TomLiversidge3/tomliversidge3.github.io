@@ -420,23 +420,28 @@ body {
     width: 80%;
     margin: auto;
     border-radius: 5px;
-    margin-bottom: 40px;
-    margin-top: 25px;
+    margin-bottom: 160px;
+    margin-top: 30px;
+}
+
+.carousel-center {
+    width: 80%;
 }
 
 .carousel-flex-wrapper {
     display: flex;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    background-color: var(--color-2);
     border: 2px solid black;
     border-radius: 5px;
-    padding: 20px 0;
 }
 
 .carousel-image {
     background-image: url("Waitrose site/cover.PNG");
-    border: 1px solid black;
+    border: 3px solid var(--color-1);
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 0;
     padding-bottom: 80%;
@@ -451,12 +456,17 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 32%;
-    padding-bottom: 32%;
+    padding-top: 45%;
+    padding-bottom: 40%;
     width: 10%;
     text-decoration: none;
     color: black;
 }
+
+.anchor-arrow-carousel:active {
+    transform: scale(1.15);
+}
+
 
 .anchor-image-carousel {
    width: 100%;
@@ -470,11 +480,20 @@ body {
 }
 
 .website-title {
-    font-family: sans-serif;
+    font-family: "Space Mono", sans-serif;
     color: black;
     font-size: 24px;
     margin-bottom: 20px;
     display: block;
+    margin-top: 5px;
+}
+
+.original-site-link {
+    background-color: var(--color-1);
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 .footer-section {
@@ -599,7 +618,7 @@ body {
         }
         
         
-      }
+      } 
 
       @media (max-width: 700px) {
        
@@ -614,11 +633,10 @@ body {
 
 /* Color scheme
    Remove some color, add some back
-   can i use .com
+   can i use.com
    progressive enhancement
    csstricks.com
-   adobe coloc picjer
+   adobe color picker
    google font combinations
    npm
-   
 */

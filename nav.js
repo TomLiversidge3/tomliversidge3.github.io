@@ -31,13 +31,15 @@ const websites = [
         id: 1,
         title: "Waitrose",
         backgroundImage: "url('Waitrose site/cover.PNG')",
-        link: "/Waitrose site/index.html"
+        link: "/Waitrose site/index.html",
+        ogSiteLink: "https://www.waitrose.com/ecom/shop/browse/offers/highlights/my-waitrose"
     },
     {
         id: 2,
         title: "KTM",
         backgroundImage: "url('KTM/cover.PNG')",
-        link: "/KTM/index.html"
+        link: "/KTM/index.html",
+        ogSiteLink: "https://www.ktm.com/en-gb/models/enduro/4-stroke/ktm-350-exc-f-sixdays2023.html"
     }
 ];
 
@@ -45,6 +47,7 @@ const websites = [
 const title = document.getElementById("title-carousel");
 const carouselImg = document.getElementById("carousel-image");
 const link = document.getElementById("site-link");
+const originalSiteLink = document.getElementById("original-site-link");
 
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
@@ -62,7 +65,8 @@ function showWebsite(website) {
     const item = websites[website];
     title.textContent = item.title;    
     carouselImg.style.backgroundImage = item.backgroundImage;
-    link.href = item.link
+    link.href = item.link;
+    originalSiteLink.href = item.ogSiteLink;
 };
 
 //show next website

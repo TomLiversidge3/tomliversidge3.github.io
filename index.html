@@ -15,6 +15,7 @@
 
 </head>
 <body id="body">
+     <a name="top"></a><a name="about"></a>
     <nav id="navbar" class="navbar navbar-extended">
       <p class="title"><strong>Tom's Portfolio</strong></p>
       <button>
@@ -31,13 +32,13 @@
       </button>
       <ul class="links">
         <li>
-          <a href="#welcome-section">Home</a>
+          <a href="#top">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#js-mini">Work</a>
         </li>
         <li>
           <a href="#footer">Contact</a>
@@ -46,26 +47,28 @@
       <i class="menu fa fa-bars fa-3x nav-toggle"></i>
     </nav>
     <main>
-     
+      
       <section id='welcome-section'> 
           <div class="background-image-home"></div>
           <h1 id="h1"><em>I am a web developer</em><span class="gb"><b><br>Well nearly...</b></span></h1>
       </section>
+     
       <div id="max-width">
       <section id="about">
       <div class="flex-wrapper">
        <div class="about-me">
-         <h3>About me</h3> <br>
-         <p></p><br>
+         <h3>About me</h3>
+         <p>Hello, my name is Tom and I have been working to become a web developer,
+           I'm 20 years old and from Brighton. I have spent the last few years trying to figure out what career I want, it took me a while but I feel happy to say I found great passion in coding. I love that it allows me to combine my enjoyment of problem solving skills with design and style. </p><br>
          <h3>What I'm learning</h3><br>
          <p>I'm currently learning the 3 fundamentals of web design, I started off with html and css on freecodecamp (146 lessons and 5 small projects),
            I completed that certificate and then moved onto javascript tutorials (127). Alongside that I began small projects to improve my hmtl/css skills by
             copying sections of a web page and attempting to make it match visually and work responsively on different devices.</p>
          <p> Since then I have begun to create larger projects and incorporate more javascript into my work. I have been familiarizing myself with Bootstrap, jQuery and SASS.
            I'm also learning ES6 and have been practicing lots of flexbox and grid.</p>
-         <div class="img-container">
+         <div class="img-container"><a name="js-mini"></a>
           <img src="imgs/html_css_js.png">
-         </div>
+         </div> 
        </div>
      </div>
     </section> 
@@ -104,15 +107,20 @@
     </div>
       <div id="website-copies-work">
        <div class="carousel-flex-wrapper">
-         <a href="#website-copies-work" class="anchor-arrow-carousel prev-btn">
-           <i class="fa fa-solid fa-chevron-left fa-2x"></i>
+         <a  class="anchor-arrow-carousel prev-btn">
+           <i class="fa fa-solid fa-chevron-left fa-3x"></i>
          </a>
-        <a href="Waitrose site/" id="site-link" class="anchor-image-carousel">
-          <span class="website-title" id="title-carousel">Waitrose</span>
-          <div class="carousel-image" id="carousel-image"></div>
-        </a>
-        <a href="#website-copies-work" class="anchor-arrow-carousel next-btn">
-          <i class="fa fa-solid fa-chevron-right fa-2x"></i>
+         <div class="carousel-center">
+            <a href="Waitrose site/" id="site-link" class="anchor-image-carousel">
+              <span class="website-title" id="title-carousel">Waitrose</span>
+              <div class="carousel-image" id="carousel-image"></div>
+            </a>
+            <a id="original-site-link" style="text-decoration:none" target="_blank" href="https://www.waitrose.com/ecom/shop/browse/offers/highlights/my-waitrose">
+              <p id="original-site" class="original-site-link">Link to original site</p>
+            </a>
+          </div>
+          <a  class="anchor-arrow-carousel next-btn">
+          <i class="fa fa-solid fa-chevron-right fa-3x"></i>
         </a>
       </div>
      </div>
@@ -127,7 +135,7 @@
           <span class="footer-info bigFont">Contact</span>
          <div class="footer-info-container">
           <i class="fa fa-envelope fa-2x"></i>
-          <span class="footer-info">Email : <a href="mailto:tomliversidge3@gmail.com">tomliversidge3@gmail.com</a></span>
+          <span class="footer-info">Email : <a href="mailto:tomliversidge7@gmail.com">tomliversidge7@gmail.com</a></span>
           </div>
          <div class="footer-info-container">
           <img src="imgs/github-mark-white.png">
