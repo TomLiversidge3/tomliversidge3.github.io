@@ -427,13 +427,15 @@ body {
 .carousel-flex-wrapper {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
     border-radius: 5px;
     padding: 20px 0;
 }
 
 .carousel-image {
     background-image: url("Waitrose site/cover.PNG");
+    border: 1px solid black;
     background-size: cover;
     width: 100%;
     height: 0;
@@ -485,6 +487,7 @@ body {
     padding: 30px 20px 20px 20px;
     font-family: sans-serif;
     box-sizing: border-box;
+    border-top: 3px solid black;
 }
 
 .footer-info-wrapper {
@@ -492,7 +495,7 @@ body {
     flex-direction: column;
     max-height: 160px;
     width: auto;
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     padding: 10px 10px 10px 10px;
     border-radius: 2.5px;  
     color: white;  
@@ -500,7 +503,7 @@ body {
 }
 
 .footer-left {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     height: 30px;
     width: 88px;
     text-align: center;

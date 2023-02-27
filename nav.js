@@ -30,19 +30,21 @@ const websites = [
     {
         id: 1,
         title: "Waitrose",
-        backgroundImage: "url('Waitrose site/cover.PNG')"
+        backgroundImage: "url('Waitrose site/cover.PNG')",
+        link: "/Waitrose site/index.html"
     },
     {
         id: 2,
         title: "KTM",
-        backgroundImage: "url('KTM/cover.PNG')"
+        backgroundImage: "url('KTM/cover.PNG')",
+        link: "/KTM/index.html"
     }
 ];
 
-const title = document.getElementById("title-carousel");
-const link = document.getElementById("link");
-const carouselImg = document.getElementById("carousel-image");
 
+const title = document.getElementById("title-carousel");
+const carouselImg = document.getElementById("carousel-image");
+const link = document.getElementById("site-link");
 
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
@@ -60,6 +62,7 @@ function showWebsite(website) {
     const item = websites[website];
     title.textContent = item.title;    
     carouselImg.style.backgroundImage = item.backgroundImage;
+    link.href = item.link
 };
 
 //show next website
