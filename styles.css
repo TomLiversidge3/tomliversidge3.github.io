@@ -415,6 +415,14 @@ body {
     color: white;
 }
 
+.css-exercises {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
 #website-copies-work {
     max-width: 1000px;
     width: 80%;
