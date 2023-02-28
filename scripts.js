@@ -33,7 +33,7 @@ const websites = [
     {
         id: 2,
         title: "KTM",
-        backgroundImage: "url('KTM/Cover.png')",
+        backgroundImage: "url('KTM/cover.png')",
         link: "KTM/index.html",
         ogSiteLink: "https://www.ktm.com/en-gb/models/enduro/4-stroke/ktm-350-exc-f-sixdays2023.html"
     }
