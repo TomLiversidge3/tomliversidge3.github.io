@@ -27,14 +27,14 @@ const websites = [
         id: 1,
         title: "Waitrose",
         backgroundImage: "url('waitrose/cover.png')",
-        link: "/waitrose/index.html",
+        link: "waitrose/index.html",
         ogSiteLink: "https://www.waitrose.com/ecom/shop/browse/offers/highlights/my-waitrose"
     },
     {
         id: 2,
         title: "KTM",
         backgroundImage: "url('KTM/Cover.png')",
-        link: "/KTM/index.html",
+        link: "KTM/index.html",
         ogSiteLink: "https://www.ktm.com/en-gb/models/enduro/4-stroke/ktm-350-exc-f-sixdays2023.html"
     }
 ];
