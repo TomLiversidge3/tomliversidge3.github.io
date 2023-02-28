@@ -487,16 +487,15 @@ body {
 }
 
 .original-site-link {
+    text-align: center;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: white;
     background-color: var(--color-1);
     border-radius: 3px;
     padding: 10px;
-    text-align: center;
-
-}
-
-#original-site-link {
-    text-decoration: none;
-    color: white;
 }
 
 .footer-section {
