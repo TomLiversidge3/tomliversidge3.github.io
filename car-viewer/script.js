@@ -4,7 +4,7 @@ const cars = [
         manufacturer: "Porsche",
         model: "Porsche 918 Spyder",
         img: "assets/porsche-918-weissach-wrap-miami-11.jpg",
-        text: "This Chrome red porsche 918 spyder sold for £1.65m ashdbahsjdsda ashd jasdhjasgdhjasghjdgajgsdjgahsd ajshgdhjasgdhjasgdhjasgdhjasgdhjasgdhj asjhdgashjdghjsagdhjasgdhjasgdhjasdghjasgdhj gasdhg hjsagdhjsagdhjsagdhjasgdhjagdshjasgdhjasgdhjasdjh"
+        text: "This Chrome red porsche 918 spyder sold for £1.65m"
 
     },
     {

@@ -10,15 +10,20 @@
     --c9: rgb(23, 121, 14);
     --c10: rgb(7, 223, 0);
     --color-1: #001742;
-    --color-2:  #0053F0;
+    --color-2: teal;
+    --color-3: lightgray
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
     font-family: "Space Mono", sans-serif;
+}
+
+h3 {
+    margin-bottom: 15px;
 }
 
 p {
@@ -38,7 +43,7 @@ p {
     top: 0;
     display: flex;
     border-bottom: solid 2px red;
-    z-index: 99;  
+    z-index: 99;
     color: #001742;
 }
 
@@ -57,31 +62,7 @@ body {
     margin-left: 0px;
     background-color: var(--color-1);
     padding: 105px 0 0 0;
-    margin: 0;   
-}
-
-.navbar button a {
-    color: white; 
-    text-decoration: none;
-    font-size: 28px;
-    font-family: sans-serif;
-    width: 130px;
-    height: 73px;
-    display: inline-block;
-    line-height: 73px;
-}
-
-.navbar button {
-    background-color: rgba(5, 27, 87, 1);
-    border-width: 3px;
-    border-radius: 5px;
-    border-color: var(--color-2);
-    box-shadow: inset 0 0 0 0 var(--color-2);
-    transition: ease-out 0.3s;
-    margin-top: 19.5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    height: 80px; 
+    margin: 0;
 }
 
 .title {
@@ -91,15 +72,11 @@ body {
     font-size: 45px;
     transform: rotate(-3deg);
     font-family: "Space Mono", sans-serif;
-    /*text-shadow: 4px 4px 0 #2068f0b5;*/
 }
 
-.title:hover {
-    color: white;
-}
-
-.navbar button:hover {
-    box-shadow: inset  0 120px 0 0 var(--color-2);
+.title a {
+    text-decoration: none;
+    color: var(--color-1);
 }
 
 .navbar-extended li {
@@ -107,20 +84,19 @@ body {
     transition: ease-in 0.2s;
 }
 
-.navbar-extended li:hover {
-    box-shadow: inset 3000px 0px 50px 0px  var(--color-2);
+.navbar-extended li:hover a {
+    color: var(--color-2);
 }
 
-#welcome-section { 
-    display: flex;
-    justify-content: center;
+#welcome-section {
+    padding-top: 150px;
     width: 100%;
-    height: 1000px;
+    height: 500px;
     position: relative;
-    align-items: center;
     color: black;
     background-color: var(--color-1);
     z-index: 2;
+    text-align: center;
 }
 
 .background-image-home {
@@ -130,17 +106,18 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    /**background:transparent repeat-x 0 0 url("imgs/binary-code-digital-background-free-video.jpg");*/ 
-    z-index: 0; 
+    background: transparent repeat-x 0 0 url("imgs/binary-code-digital-background-free-video.jpg");
+    z-index: 0;
 }
 
 #welcome-section h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 3;
     font-weight: 400;
     padding: 0 20px;
+    margin-bottom: 0;
 }
 
 @keyframes background-pan {
@@ -154,28 +131,32 @@ body {
 }
 
 .gb {
+    margin-top: 0;
     animation: background-pan 2s linear infinite;
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     background: linear-gradient(
-        to right,
-        var(--c1),
-        var(--c2),
-        var(--c3),
-        var(--c4),
-        var(--c5),
-        var(--c6),
-        var(--c7),
-        var(--c8),
-        var(--c9),
-        var(--c10)  
+            to right,
+            var(--c1),
+            var(--c2),
+            var(--c3),
+            var(--c4),
+            var(--c5),
+            var(--c6),
+            var(--c7),
+            var(--c8),
+            var(--c9),
+            var(--c10)
     );
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     position: relative;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 .mini-projects {
@@ -186,7 +167,6 @@ body {
     padding-top: 20px;
     padding-bottom: 35px;
 }
-
 
 .flex-wrapper {
     display: flex;
@@ -210,8 +190,7 @@ body {
 }
 
 .img-container img {
-    max-width: 50%;
-    max-height: auto;
+    max-width: 350px;
     margin: auto;
 }
 
@@ -221,7 +200,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 
 .about-me h3 {
     font-weight: 400;
@@ -245,11 +223,9 @@ body {
     font-weight: 400;
 }
 
-
-
 #footer {
     width: 100%;
-    background-color: rgb(29, 27, 27);
+    background-color: var(--color-3);
 }
 
 .menu {
@@ -270,7 +246,7 @@ body {
     color: var(--color-2);
 }
 
-.links li a{
+.links li a {
     display: block;
     text-decoration: none;
     color: black;
@@ -302,18 +278,20 @@ body {
     transition: 0.7s ease;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-      }
-
-
-    #work {
-        background-color: var(--color-1);
-        width: 100%;
-        display: flex;
-      }
+#work {
+    background-color: var(--color-1);
+    width: 100%;
+    display: flex;
+}
 
 .projects-container {
     width: 70%;
@@ -336,13 +314,12 @@ body {
 }
 
 .box:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .column-one a {
     text-decoration: none;
 }
-
 
 .column-one {
     width: 100%;
@@ -355,7 +332,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(19, 18, 18);
+    background-color: var(--color-2);
     font-size: 25px;
     padding: 5px;
     font-weight: 400;
@@ -363,42 +340,42 @@ body {
 }
 
 .box-background-image-1 {
-    background: url("imgs/car viewer img.PNG") no-repeat center;
+    background: url("imgs/car-viewer.png") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-2 {
-    background: url("Counter.PNG") no-repeat center ;
+    background: url("counter.png") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-3 {
-    background: url("Questions/cover.PNG") no-repeat center ;
+    background: url("questions/cover.png") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-4 {
-    background: url("Counter.PNG") no-repeat center ;
+    background: url("counter.png") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-5 {
-    background: url("imgs/link\ image.PNG") no-repeat center ;
+    background: url("imgs/link-image.png") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-6 {
-    background: url("Counter.PNG") no-repeat center ;
+    background: url("Counter.PNG") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-7 {
-    background: url("imgs/car viewer img.PNG") no-repeat center ;
+    background: url("imgs/car viewer img.PNG") no-repeat center;
     background-size: cover;
 }
 
 .box-background-image-8 {
-    background: url("Counter.PNG") no-repeat center ;
+    background: url("Counter.PNG") no-repeat center;
     background-size: cover;
 }
 
@@ -418,7 +395,6 @@ body {
 .css-exercises {
     color: white;
     text-align: center;
-    margin-bottom: 60px;
     font-weight: 400;
     font-size: 40px;
 }
@@ -446,9 +422,9 @@ body {
 }
 
 .carousel-image {
-    background-image: url("Waitrose site/cover.PNG");
-    border: 3px solid var(--color-1);
-    background-size: cover;
+    background-image: url("waitrose/cover.png");
+    border: 1px solid var(--color-1);
+    background-size: contain;
     background-position: center;
     width: 100%;
     height: 0;
@@ -468,19 +444,19 @@ body {
     padding-bottom: 40%;
     width: 10%;
     text-decoration: none;
-    color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .anchor-arrow-carousel:active {
     transform: scale(1.15);
 }
 
-
 .anchor-image-carousel {
-   width: 100%;
-   margin: auto;
-   text-align: center;
-   text-decoration: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
 }
 
 .carousel-link-div {
@@ -489,7 +465,7 @@ body {
 
 .website-title {
     font-family: "Space Mono", sans-serif;
-    color: black;
+    color: white;
     font-size: 24px;
     margin-bottom: 20px;
     display: block;
@@ -502,10 +478,10 @@ body {
     color: white;
     padding: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 .footer-section {
-    background-color: var(--color-2);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -515,6 +491,7 @@ body {
     font-family: sans-serif;
     box-sizing: border-box;
     border-top: 3px solid black;
+    font-family: "Space Mono", sans-serif;
 }
 
 .footer-info-wrapper {
@@ -523,21 +500,20 @@ body {
     max-height: 160px;
     width: auto;
     background-color: var(--color-1);
-    padding: 10px 10px 10px 10px;
-    border-radius: 2.5px;  
-    color: white;  
+    padding: 20px;
+    color: white;
     margin-right: 40px;
+    border-radius: 5px;
 }
 
 .footer-left {
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     height: 30px;
-    width: 88px;
+    width: 135px;
     text-align: center;
     padding: 5px;
     border-radius: 2.5px;
-    display: flex;
-    align-items: center;
+    text-align: center;
     color: white;
 }
 
@@ -555,7 +531,6 @@ body {
     text-align: center;
 }
 
-
 .bigFont {
     font-size: 30px;
 }
@@ -565,12 +540,13 @@ body {
     align-items: center;
 }
 
-.fa-envelope {
+.fa-envelope, .fa-phone {
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .footer-info-container img {
-    width: 35px;
+    width: 23px;
     margin-right: 7px;
 }
 
@@ -583,68 +559,101 @@ body {
     margin-top: 7px;
 }
 
+.contact-type {
+    width: 100px;
+    display: inline-block;
+}
 
 
-      @media (max-width: 2000px) {
-    
-    
-        .navbar-extended {
-            display: flex;
-            flex-direction: column;
-            transition: 1s ease;
+@media (max-width: 1024px) {
+
+    .navbar-extended {
+        display: flex;
+        flex-direction: column;
+        transition: 1s ease;
+    }
+
+    .menu {
+        display: block;
+        animation: fadeIn 1s ease;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .mini-projects {
+        font-size: 60px;
+        font-family: sans-serif;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    #welcome-section h1 {
+        color: #fff;
+        font-size: 100px;
+    }
+
+    @supports (-webkit-text-stroke: 1px white) {
+        #welcome-section h1 {
+            -webkit-text-stroke: 1px white;
+            color: transparent;
         }
-        
-    
-        #navbar button {
-            display: none;
-            height: 0;
-            overflow: hidden;
-            width: 0;
-            border: 0;
+
+        #welcome-section h1 span {
+            -webkit-text-stroke: 1px white;
+            color: transparent;
         }
-    
-        .menu {
-            display: block;
-            animation: fadeIn 1s ease; 
-                
-            }
-        }
+    }
+}
 
+@media (min-width: 1024px) {
 
-      @media (max-width: 1024px) {
-         .projects-container {
-            flex-direction: column;
-         }
+    .links {
+        display: flex;
+        margin-right: 30px;
+        height: auto;
+    }
 
-         .mini-projects {
-            font-size: 60px;
-            font-family: sans-serif;
-            width: 100%;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 35px;
-        }
-        
-        
-      } 
+    .links li {
+        text-align: center;
+        margin-right: 10px;
+        padding: 0;
+        display: inline-flex;
+        border-radius: 4px;
+    }
 
-      @media (max-width: 700px) {
-       
+    .links li a {
+        margin: 0 10px 0 0;
+        padding: 10px;
+        background-color: rgba(5, 27, 87, 1);
+        color: #fff;
+        text-align: center;
+        height: 30px;
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 23px;
+    }
 
-        .footer-section {
-            flex-direction: column;
-        }
-        
-      } 
-
-    
-
-/* Color scheme
-   Remove some color, add some back
-   can i use.com
-   progressive enhancement
-   csstricks.com
-   adobe color picker
-   google font combinations
-   npm
-*/
+    .links li a:hover {
+        color: #fff;
+        box-shadow: inset 0 120px 0 0 var(--color-2);
+        transition: ease-in 0.2s;
+    }
+}

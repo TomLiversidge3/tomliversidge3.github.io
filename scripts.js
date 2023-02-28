@@ -5,16 +5,12 @@ const navToggle = document.querySelector(".nav-toggle")
 const links = document.querySelector(".links")
 
 navToggle.addEventListener("click", function(){
-    // console.log(links.classList);
-    // console.log(links.classList.contains("links"));
+
     if(links.classList.contains("show-links")){
         links.classList.remove("show-links")
-    }
-    else {
+    } else {
         links.classList.add("show-links")
-    } 
-    // links.classList.toggle("show-links");
-    // Alternative 1 liner option
+    }
 });
 
 const closeNav = document.querySelector("main")
@@ -30,15 +26,15 @@ const websites = [
     {
         id: 1,
         title: "Waitrose",
-        backgroundImage: "url('Waitrose site/cover.PNG')",
-        link: "/Waitrose site/index.html",
+        backgroundImage: "url('waitrose/cover.png')",
+        link: "waitrose/index.html",
         ogSiteLink: "https://www.waitrose.com/ecom/shop/browse/offers/highlights/my-waitrose"
     },
     {
         id: 2,
         title: "KTM",
-        backgroundImage: "url('KTM/Cover.PNG')",
-        link: "/KTM/index.html",
+        backgroundImage: "url('KTM/Cover.png')",
+        link: "KTM/index.html",
         ogSiteLink: "https://www.ktm.com/en-gb/models/enduro/4-stroke/ktm-350-exc-f-sixdays2023.html"
     }
 ];

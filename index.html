@@ -1,190 +1,142 @@
 <!DOCTYPE html>
-<html> 
-
-<head>  
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+<html>
+<head>
+    <title>Tom Liversidge - Portfolio of front end development exercises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
 </head>
 <body id="body">
-     <a name="top"></a><a name="about"></a>
-    <nav id="navbar" class="navbar navbar-extended">
-      <p class="title"><strong>Tom's Portfolio</strong></p>
-      <button>
-        <a href="#welcome-section" class="hideme anchor-pad">Home</a>
-      </button>
-      <button>
-        <a href="#about" class="hideme anchor-pad">About</a>
-      </button>
-      <button> 
-        <a href="#work" class="hideme anchor-pad">Work</a> 
-      </button>
-      <button> 
-        <a href='#footer' class="hideme anchor-pad">Contact</a> 
-      </button>
-      <ul class="links">
-        <li>
-          <a href="#top">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#js-mini">Work</a>
-        </li>
-        <li>
-          <a href="#footer">Contact</a>
-        </li>
-      </ul>
-      <i class="menu fa fa-bars fa-3x nav-toggle"></i>
-    </nav>
-    <main>
-      
-      <section id='welcome-section'> 
-          <div class="background-image-home"></div>
-          <h1 id="h1"><em>I am a web developer</em><span class="gb"><b><br>Well nearly...</b></span></h1>
-      </section>
-     
-      <div id="max-width">
-      <section id="about">
-      <div class="flex-wrapper">
-       <div class="about-me">
-         <h3>About me</h3>
-         <p>Hello, my name is Tom and I have been working to become a web developer,
-           I'm 20 years old and from Brighton. I have spent the last few years trying to figure out what career I want, it took me a while but I feel happy to say I found great passion in coding. I love that it allows me to combine my enjoyment of problem solving skills with design and style. </p><br>
-         <h3>What I'm learning</h3><br>
-         <p>I'm currently learning the 3 fundamentals of web design, I started off with html and css on freecodecamp (146 lessons and 5 small projects),
-           I completed that certificate and then moved onto javascript tutorials (127). Alongside that I began small projects to improve my hmtl/css skills by
-            copying sections of a web page and attempting to make it match visually and work responsively on different devices.</p>
-         <p> Since then I have begun to create larger projects and incorporate more javascript into my work. I have been familiarizing myself with Bootstrap, jQuery and SASS.
-           I'm also learning ES6 and have been practicing lots of flexbox and grid.</p>
-         <div class="img-container"><a name="js-mini"></a>
-          <img src="imgs/html_css_js.png">
-         </div> 
-       </div>
-     </div>
-    </section> 
-    <!-- Javascript mini projects-->   
-    <div class="mini-projects">
-      <h3>Javascript mini projects</h3>
-    <section id="work">
-      <div class="projects-container">
-        <div class="column-one">
-          <a href="Car viewer/index.html" target="_blank">
-            <div class="box box-background-image-1">
-               <section class="box-section">Car Viewer</section>
-            </div>
-          </a>
-          
-          <a href="Questions/index.html" target="_blank">
-            <div class="box box-background-image-3">
-              <section class="box-section">Questions</section>
-            </div>
-          </a>
-        </div>
-        <div class="column-one">
-          <a href="Color flipper/index.html" target="_blank">
-            <div class="box box-background-image-5">
-              <section class="box-section">Color Flipper</section>
-            </div>
-          </a>
-          <a href="Counter/index.html" target="_blank">
-            <div class="box box-background-image-6">
-              <section class="box-section">Counter</section>
-            </div>
-          </a>
-        </div>
-      </div>
+<a id="top"></a>
+<nav id="navbar" class="navbar navbar-extended">
+    <p class="title"><a href="/">Tom’s Portfolio</a></p>
+    <ul class="links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#js-mini">Work</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+    <i class="menu fa fa-bars fa-3x nav-toggle"></i>
+</nav>
+<main>
+    <section id='welcome-section'>
+        <div class="background-image-home"></div>
+        <h1 id="h1">I am a <span>web</span> developer</h1>
+        <p><span class="gb">Well nearly&hellip;</span></p>
     </section>
+    <div id="max-width">
+        <section id="about">
+            <div class="flex-wrapper">
+                <div class="about-me">
+                    <h3>About me</h3>
+                    <p>Hello, my name is Tom and I have been working to become a web developer,
+                        I'm 20 years old and from Brighton. I have spent the last few years trying to figure out what
+                        career I want, it took me a while but I feel happy to say I found great passion in coding. I
+                        love that it allows me to combine my enjoyment of problem solving skills with design and
+                        style. </p>
+                    <h3>What I'm learning</h3>
+                    <p>I'm currently learning the 3 fundamentals of web design, I started off with html and css on
+                        freecodecamp (146 lessons and 5 small projects),
+                        I completed that certificate and then moved onto javascript tutorials (127). Alongside that I
+                        began small projects to improve my hmtl/css skills by
+                        copying sections of a web page and attempting to make it match visually and work responsively on
+                        different devices.</p>
+                    <p> Since then I have begun to create larger projects and incorporate more javascript into my work.
+                        I have been familiarizing myself with Bootstrap, jQuery and SASS.
+                        I'm also learning ES6 and have been practicing lots of flexbox and grid.</p>
+                    <div class="img-container">
+                        <a id="js-mini"></a>
+                        <img alt="html/css/js" src="imgs/html_css_js.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Javascript mini projects-->
+        <div class="mini-projects">
+            <h3>Javascript mini projects</h3>
+            <section id="work">
+                <div class="projects-container">
+                    <div class="column-one">
+                        <a href="car-viewer/index.html" target="_blank">
+                            <div class="box box-background-image-1">
+                                <section class="box-section">Car Viewer</section>
+                            </div>
+                        </a>
+                        <a href="questions/index.html" target="_blank">
+                            <div class="box box-background-image-3">
+                                <section class="box-section">Questions</section>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column-one">
+                        <a href="color-flipper/index.html" target="_blank">
+                            <div class="box box-background-image-5">
+                                <section class="box-section">Color Flipper</section>
+                            </div>
+                        </a>
+                        <a href="counter/index.html" target="_blank">
+                            <div class="box box-background-image-6">
+                                <section class="box-section">Counter</section>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <h3 class="css-exercises">CSS Exercises</h3>
+        <div id="website-copies-work">
+            <div class="carousel-flex-wrapper">
+                <a class="anchor-arrow-carousel prev-btn">
+                    <i class="fa fa-solid fa-chevron-left fa-2x"></i>
+                </a>
+                <div class="carousel-center">
+                    <a href="waitrose/index.html" id="site-link" class="anchor-image-carousel">
+                        <span class="website-title" id="title-carousel">Waitrose</span>
+                        <div class="carousel-image" id="carousel-image"></div>
+                    </a>
+                    <a id="original-site-link" target="_blank"
+                       href="https://www.waitrose.com/ecom/shop/browse/offers/highlights/my-waitrose">
+                        <p id="original-site" class="original-site-link">Link to original site</p>
+                    </a>
+                </div>
+                <a class="anchor-arrow-carousel next-btn">
+                    <i class="fa fa-solid fa-chevron-right fa-2x"></i>
+                </a>
+            </div>
+        </div>
     </div>
-    <h3 class="css-exercises">CSS Exercises</h3>
-      <div id="website-copies-work">
-       <div class="carousel-flex-wrapper">
-         <a  class="anchor-arrow-carousel prev-btn">
-           <i class="fa fa-solid fa-chevron-left fa-3x"></i>
-         </a>
-         <div class="carousel-center">
-            <a href="Waitrose site/" id="site-link" class="anchor-image-carousel">
-              <span class="website-title" id="title-carousel">Waitrose</span>
-              <div class="carousel-image" id="carousel-image"></div>
-            </a>
-            <a id="original-site-link" style="text-decoration:none" target="_blank" href="https://www.waitrose.com/ecom/shop/browse/offers/highlights/my-waitrose">
-              <p id="original-site" class="original-site-link">Link to original site</p>
-            </a>
-          </div>
-          <a  class="anchor-arrow-carousel next-btn">
-          <i class="fa fa-solid fa-chevron-right fa-3x"></i>
-        </a>
-      </div>
-     </div>
-    </div>
-  </main>
-    <footer id="footer">
-      <section class="footer-section">
+</main>
+<footer id="footer">
+    <section class="footer-section">
         <a class="back-to-top" href="index.html">
-          <div class="footer-left">Back to top</div>
+            <div class="footer-left">Back to top</div>
         </a>
         <div class="footer-info-wrapper">
-          <span class="footer-info bigFont">Contact</span>
-         <div class="footer-info-container">
-          <i class="fa fa-envelope fa-2x"></i>
-          <span class="footer-info">Email : <a href="mailto:tomliversidge7@gmail.com">tomliversidge7@gmail.com</a></span>
-          </div>
-         <div class="footer-info-container">
-          <img src="imgs/github-mark-white.png">
-          <span class="footer-info">Github : TomLiversidge3</span>
-         </div>
-         <div class="footer-info-container">
-          <i class="fa fa-phone fa-2x phone-icon"></i>
-          <span class="footer-info">Phone : 078342764</span>
-         </div>
-       </div>
-      </section>
-    </footer>
-    <script src="nav.js"></script>
+            <span class="footer-info bigFont">Contact</span>
+            <div class="footer-info-container">
+                <i class="fa fa-envelope fa-2x"></i>
+                <span class="footer-info"><a href="mailto:tomliversidge7@gmail.com">tomliversidge7@gmail.com</a></span>
+            </div>
+            <div class="footer-info-container">
+                <img src="imgs/github-mark-white.png" alt="Github">
+                <span class="footer-info">TomLiversidge3</span>
+            </div>
+            <div class="footer-info-container">
+                <i class="fa fa-phone fa-2x phone-icon"></i>
+                <span class="footer-info">07597 783029</span>
+            </div>
+        </div>
+    </section>
+</footer>
+<script src="scripts.js"></script>
 </body>
-
 </html>
 
 
 
 
-
-
-
-
-
-
-
-
-
-<!-- Your portfolio should have a welcome section with an id of welcome-section
-
-The welcome section should have an h1 element that contains text
-
-Your portfolio should have a projects section with an id of projects
-
-The projects section should contain at least one element with a class of project-tile to hold a project
-
-The projects section should contain at least one link to a project
-
-Your portfolio should have a navbar with an id of navbar
-
-The navbar should contain at least one link that you can click on to navigate to different sections of the page
-
-Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
-
-Your portfolio should have at least one media query
-
-The height of the welcome section should be equal to the height of the viewport
-
-The navbar should always be at the top of the viewport --> 
 
