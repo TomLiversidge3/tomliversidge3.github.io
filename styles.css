@@ -141,7 +141,6 @@ body {
     animation: background-pan 2s linear infinite;
     font-size: 35px;
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-style: italic;
     background: linear-gradient(
             to right,
             var(--c1),
