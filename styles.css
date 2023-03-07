@@ -355,7 +355,7 @@ body {
 }
 
 .box-background-image-2 {
-    background: url("counter.png") no-repeat center;
+    background: url("counter/counter.png") no-repeat center;
     background-size: cover;
 }
 
@@ -375,7 +375,7 @@ body {
 }
 
 .box-background-image-6 {
-    background: url("counter.png") no-repeat center;
+    background: url("counter/counter.png") no-repeat center;
     background-size: cover;
 }
 
