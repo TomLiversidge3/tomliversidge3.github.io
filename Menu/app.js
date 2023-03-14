@@ -91,6 +91,13 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 
 window.addEventListener("DOMContentLoaded", function(){
     displayVehicleOptions(vehicles);
+const categories = vehicles.reduce(function(values, item){
+    if(!values.includes(item.category)) {
+        values.push(item.category);
+    }
+return values    
+}, ["all"])
+console.log(categories);
 });
 
 filterBtns.forEach(function(btn){
@@ -134,6 +141,8 @@ function displayVehicleOptions (vehicleOptions){
       displayVehicles = displayVehicles.join("");
       sectionCenter.innerHTML = displayVehicles;
 }
+
+
 
 
 
