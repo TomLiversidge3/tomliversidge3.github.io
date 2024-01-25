@@ -9,9 +9,10 @@
     --c8: rgb(15, 54, 11);
     --c9: rgb(23, 121, 14);
     --c10: rgb(7, 223, 0);
-    --color-1: #001742;
-    --color-2: teal;
-    --color-3: lightgray
+    --color-1: #202731;
+    --color-2: #3d31dd6c;
+    --color-3: lightgray;
+    --color-4: #ff0066;
 }
 
 html {
