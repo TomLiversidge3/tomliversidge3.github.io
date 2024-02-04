@@ -9,9 +9,10 @@
     --c8: rgb(15, 54, 11);
     --c9: rgb(23, 121, 14);
     --c10: rgb(7, 223, 0);
-    --color-1: #001742;
-    --color-2: teal;
-    --color-3: lightgray
+    --color-1: #202731;
+    --color-2: #2a2292;
+    --color-3: white;
+    --color-4: #ff0066;
 }
 
 html {
@@ -50,7 +51,7 @@ p {
 .navbar-extended {
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: var(--color-1);
     padding-top: 0%;
     top: 0;
     border-bottom: solid 2px black;
@@ -60,7 +61,7 @@ p {
 
 body {
     margin-left: 0px;
-    background-color: var(--color-1);
+    background-color: var(--color-);
     padding: 105px 0 0 0;
     margin: 0;
 }
@@ -77,7 +78,7 @@ body {
 .title a {
     text-decoration: none;
     font-size: 45px;
-    color: var(--color-1);
+    color: var(--color-3);
 }
 
 .title:hover a {
@@ -94,37 +95,29 @@ body {
 }
 
 #welcome-section {
-    padding-top: 150px;
-    width: 100%;
-    height: 500px;
-    position: relative;
+    border: 3px solid green;
+    padding-top: 28px;
+    height: 700px;
     color: black;
     background-color: var(--color-1);
-    z-index: 2;
     text-align: center;
 }
 
-.background-image-home {
-    opacity: 0.05;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: transparent repeat-x 0 0 url("imgs/binary-code-digital-background-free-video.jpg");
-    z-index: 0;
+#svg-welcome {
+    
 }
 
-#welcome-section h1 {
-    color: #fff;
-    font-size: 40px;
+ /* h1 {
+    color: #ad0101;
+    font-size: 90px;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     z-index: 3;
     font-weight: 400;
     padding: 0 20px;
     margin-bottom: 0;
     letter-spacing: 2px;
-}
+    -webkit-text-fill-color: rgb(201, 4, 4);
+} */
 
 @keyframes background-pan {
     from {
@@ -196,7 +189,7 @@ body {
     font-family: sans-serif;
     font-size: 18px;
     border-radius: 3.5px;
-    color: rgba(240, 226, 226, 0.781);
+    color: rgb(255, 255, 255);
 }
 
 .img-container img {
@@ -618,7 +611,7 @@ body {
 
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
 
     #welcome-section h1 {
         color: #fff;
@@ -627,16 +620,14 @@ body {
 
     @supports (-webkit-text-stroke: 1px white) {
         #welcome-section h1 {
-            -webkit-text-stroke: 1px white;
-            color: transparent;
+            -webkit-text-stroke: 1px rgb(233, 3, 3);
         }
 
         #welcome-section h1 span {
-            -webkit-text-stroke: 1px white;
-            color: transparent;
+            -webkit-text-stroke: 1px rgb(255, 0, 0);
         }
     }
-}
+} */
 
 @media (min-width: 1024px) {
 
@@ -657,7 +648,7 @@ body {
     .links li a {
         margin: 0 10px 0 0;
         padding: 10px;
-        background-color: rgba(5, 27, 87, 1);
+        background-color: var(--color-4);
         color: #fff;
         text-align: center;
         height: 30px;
